@@ -6,7 +6,21 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40vh;
+  padding: 5%;
+  h2{
+    font-size: 3rem;
+    margin-bottom: 5%;
+  }
+  input{
+    height: 1.8rem;
+    margin: 2%;
+  }
+  background: white;
+  margin-right: 30%;
+  margin-left: 30%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+  text-align:center;
 `;
 
 const StyledButton = styled.button`
@@ -78,7 +92,7 @@ const SignUpForm = (props) => {
                 onChange={onInputChange}
                 type="email"
                 name="email"
-                placeholder="email"
+                placeholder="Email"
               />
             </label>
           </div>

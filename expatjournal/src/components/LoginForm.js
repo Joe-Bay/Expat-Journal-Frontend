@@ -8,7 +8,20 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40vh;
+  padding: 5%;
+  h2{
+    font-size: 3rem;
+    margin-bottom: 5%;
+  }
+  input{
+    height: 1.8rem;
+    margin: 2%;
+  }
+  background: white;
+  margin-right: 30%;
+  margin-left: 30%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
 `;
 
 const StyledButton = styled.button`
@@ -20,7 +33,7 @@ const StyledButton = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 1% 0%;
+  margin: 5% 0%;
   transition-duration: 0.8s;
   &:hover {
     background-color: #4caf50;
@@ -59,7 +72,7 @@ const SigninForm = (props) => {
   return (
     <form className="form-container" onSubmit={onSubmit}>
       <StyledDiv>
-        <h2>Sign in</h2>
+        <h2>Login</h2>
         <div className="form-group">
           <label>
             <input
@@ -67,7 +80,7 @@ const SigninForm = (props) => {
               onChange={onInputChange}
               type="text"
               name="username"
-              placeholder="username"
+              placeholder="Username"
             />
           </label>
         </div>
@@ -78,7 +91,7 @@ const SigninForm = (props) => {
               onChange={onInputChange}
               type="password"
               name="password"
-              placeholder="password"
+              placeholder="Password"
             />
           </label>
         </div>
